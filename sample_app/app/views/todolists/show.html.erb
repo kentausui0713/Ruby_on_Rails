@@ -2,3 +2,5 @@
 <%= @list.title %>
 <h2>本文</h2>
 <%= @list.body %>
+
+<%= link_to "編集", edit_todolist_path(@list.id) %>
