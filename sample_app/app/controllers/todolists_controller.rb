@@ -1,6 +1,6 @@
 class TodolistsController < ApplicationController
   def new
-    # viewに渡すためのインスタンス変数に空のモデルオブジェクトを生成する
+    # (/Todolists/newにアクセスされたら自動生成される)viewに渡すためのインスタンス変数に空のモデルオブジェクトを生成する
     @list = List.new
   end
 
@@ -11,6 +11,9 @@ class TodolistsController < ApplicationController
     list.save
     #トップ画面へリダイレクト
     redirect_to '/top'
+  end
+
+  def index
   end
 
   private
