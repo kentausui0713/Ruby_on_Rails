@@ -11,11 +11,12 @@
 
   <body>
     <header>
-      <h1 class = "head-line">All-List</h1>
+      <h1 class = "headline">All-List</h1>
     </header>
+
+    <div class = "nav-whole">
     <nav>
       <ul class = "nav-list">
-
         <li class = "nav-list-item">
           <%= link_to "Top", top_path %>
         </li>
@@ -28,6 +29,7 @@
 
       </ul>
     </nav>
+    </div>
 
     <main>
       <%= yield %>
